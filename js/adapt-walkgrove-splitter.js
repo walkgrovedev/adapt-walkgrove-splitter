@@ -18,7 +18,7 @@ define([
       this.setReadyStatus();
 
       if(!this.model.get('buttonTitle')) {
-        this.onContinueClkicked();
+        this.onContinueClicked();
       }
     },
 
@@ -33,6 +33,8 @@ define([
 
     onContinueClicked: function() {
       this.setCompletionStatus();
+
+      this.$('.splitter__button').addClass('is-selected');
     }
 
 

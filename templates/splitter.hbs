@@ -1,20 +1,24 @@
 <div class="component__inner splitter__inner">
   {{> component this}} 
 
-  <div class="splitter__main" {{#if _backgroundColour}} style="background: {{_backgroundColour}};"{{/if}} >
+  <div class="splitter__main" style="{{#if _backgroundColour}} background: {{_backgroundColour}};{{/if}}{{#if _backgroundImage}} background-image: url({{_backgroundImage}});background-size: cover;background-repeat: no-repeat;background-position: center;{{/if}}" >
     {{#if _backgroundImage}} 
       <img class="splitter__image" src="{{_backgroundImage}}" />
     {{/if}} 
-    {{#if content}} 
-      <div>{{{content}}}</div>
-    {{/if}} 
-    {{#if buttonTitle}} 
-      <div class="splitter__button button is-visible">
-      <button class="splitter__continue-btn btn js-splitter-continue-click" aria-label="{{{buttonTitle}}}">
-        {{{buttonText}}}
-      </button>
+
+    <div class="splitter__details">
+      {{#if content}} 
+        <div class="splitter__content" {{#if _contentColour}}style="color: {{_contentColour}}"{{/if}}>{{{content}}}</div>
+      {{/if}} 
+      {{#if buttonTitle}} 
+        <div class="splitter__button button is-visible">
+        <button class="splitter__continue-btn btn js-splitter-continue-click" aria-label="{{{buttonTitle}}}">
+          {{{buttonTitle}}}
+        </button>
+      </div>
+      {{/if}} 
     </div>
-    {{/if}} 
+
   </div> 
   
   

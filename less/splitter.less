@@ -2,15 +2,43 @@
 
     &__main {
         margin-top: 2rem;
-        width: auto;
-        display:none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: 30vh;
+    }
+
+    &__image {
+        visibility: hidden;
+    }
+
+    &__details {
+        position: absolute;
+        top:0;
+        left:0;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+
+    &__content {
+        padding: 0 2rem;
+        width: 100%;
+        height: auto;
     }
 
     &__button {
         display:flex;
-        flex-direction: column;
+        justify-content: center;
+
+        &.is-selected {
+            display: none;
+        }
     }
 
 
