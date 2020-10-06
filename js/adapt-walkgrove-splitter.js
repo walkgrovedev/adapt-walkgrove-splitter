@@ -6,12 +6,20 @@ define([
 
   var SplitterView = ComponentView.extend({
 
+    events: {
+      'click .js-splitter-continue-click': 'onContinueClicked'
+    },
+    
     preRender: function() {
       this.checkIfResetOnRevisit();
     },
 
     postRender: function() {
       this.setReadyStatus();
+
+      if(!this.model.get('buttonTitle')) {
+        this.onContinueClkicked();
+      }
     },
 
     checkIfResetOnRevisit: function() {
@@ -21,7 +29,15 @@ define([
       if (isResetOnRevisit) {
         this.model.reset(isResetOnRevisit);
       }
+    },
+
+    onContinueClicked: function() {
+      this.setCompletionStatus();
     }
+
+
+
+
   },
   {
     template: 'splitter'
