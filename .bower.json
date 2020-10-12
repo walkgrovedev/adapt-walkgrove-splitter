@@ -1,13 +1,9 @@
 {
   "name": "adapt-walkgrove-splitter",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/walkgrovedev/adapt-walkgrove-splitter.git"
-  },
-  "framework": "5",
+  "framework": ">=5",
   "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-splitter.git",
-  "component": "Splitter",
-  "displayName": "splitter",
+  "component": "splitter",
+  "displayName": "Splitter",
   "description": "A component ...",
   "main": "/js/adapt-walkgrove-splitter.js",
   "keywords": [
@@ -15,14 +11,14 @@
     "adapt-component"
   ],
   "license": "GPL-3.0",
-  "_release": "ab302fd7cb",
+  "_release": "1.0.0",
   "_resolution": {
     "type": "branch",
     "branch": "master",
     "commit": "ab302fd7cbaf31fafd1d1a7e8c756ee7c0a8911c"
   },
   "_source": "git://github.com/walkgrovedev/adapt-walkgrove-splitter.git",
-  "_target": "*",
+  "_target": "1.0.0",
   "_originalSource": "adapt-walkgrove-splitter",
   "_direct": true
 }
