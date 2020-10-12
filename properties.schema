@@ -29,6 +29,31 @@
       "validators": [],
       "help": "This is the instruction text",
       "translatable": true
+    },
+    "_backgroundColour": {
+      "type": "string",
+      "required": false,
+      "translatable": false
+    },
+    "_backgroundImage": {
+      "type": "string",
+      "required": false,
+      "translatable": false
+    },
+    "content": {
+      "type": "string",
+      "required": false,
+      "translatable": true
+    },
+    "_bcontentColour": {
+      "type": "string",
+      "required": false,
+      "translatable": false
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": false,
+      "translatable": true
     }
   }
 }
