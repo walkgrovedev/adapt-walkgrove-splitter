@@ -3,7 +3,7 @@
 
   <div class="splitter__main" style="{{#if _backgroundColour}} background: {{_backgroundColour}};{{/if}}{{#if _backgroundImage}} background-image: url({{_backgroundImage}});background-size: cover;background-repeat: no-repeat;background-position: center;{{/if}}" >
     {{#if _backgroundImage}} 
-      <img class="splitter__image" src="{{_backgroundImage}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true"{{/if}} />
+      <img class="splitter__image" src="{{_backgroundImage}}" {{#if _graphic.alt}}aria-label="{{_graphic.alt}}"{{else}}aria-hidden="true" alt=""{{/if}} />
     {{/if}} 
 
     <div class="splitter__details">
